@@ -1,16 +1,27 @@
-// Print all numbers between a and b that are divisible by 7
+// Keep taking number from the user until 0 is entered , then print the largest number among all inputs.
 #include <stdio.h>
 int main(){
-	int i = 23;
-	while(i <= 96){
-		if(i % 7 == 0){
-			printf("%d " , i);
-		}else{
+	int i = 1; // hamne i ki value 1 di 
+	int n = 0; // hamne n ki value 0 di
+	int digit = 0; // hamne digit ki value 0 di
+	int high = 0; // hamne high ki value 0 di
+	int not;
+	scanf("%d" , &digit); // scan f select kiya jisse digit me no ja sake
+	do{
+		scanf("%d" , &high); //scanf select kiya taki high me no ja sake
+		if(high != 0){   // agar high 0 ke barabar nahi hai to ye wala function chalega
+			if(digit <  high){
+				digit = high;
+			}else{
+								
+			}
 			
+		}else{
+			printf("%d " ,digit);
+			break;
 		}
-		i++;
-	}
-
+		
+	}while(1);
 
 
 
